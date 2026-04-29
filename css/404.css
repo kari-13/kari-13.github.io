@@ -1,0 +1,114 @@
+.info{
+    
+    width: 2000px;           /* Sets the width of the content area */
+    height: 100px;          /* Sets the height of the content area */
+    
+    padding: 2px;          /* Adds space between the content and the border */
+    margin: 0px;           /* Adds space outside the border, between other elements */
+    background-color: #ffffff00;
+    
+     
+}
+.info p   {  
+    font-family: 'JetBrains Mono';
+    font-size: small;
+    word-wrap: break-word;
+    transition: color 14.5s ease;
+    color : #000000;
+}
+
+
+body {
+background-color: #ffffff;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+
+}
+.BO{
+    color: #000000;
+    font-family: 'JetBrains Mono';
+    text-align: left;
+    margin-top: 50px;
+    font-size: 1.75em;
+}
+
+.typing{
+    color: #000000;
+    font-family: 'JetBrains Mono';
+    text-align: left;
+    margin-top: 50px;
+    overflow: hidden; /* Hide the text until typed */
+    border-right: .20em solid orange; /* The blinking cursor */
+    white-space: nowrap; /* Keep text on one line */
+    width: 0; /* Start with 0 width */
+    display: inline-block; /* Allow width to be animated */
+    animation: 
+        typing 3.5s steps(20, end) forwards, /* Typing effect */
+        blink-caret .75s step-end infinite;
+    
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 7.2em } /* Adjust width to the length of the word */
+}
+
+/* Keyframes for the blinking cursor */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+} 
+
+.navbar {
+    background: rgba(255,255,255,0);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    overflow: hidden;
+    width: 500px;           
+    height: 50px;
+    border : 1px solid rgba(255,255,255,0.2) ;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    display : flex ;
+    align-items : center ;
+    justify-content : center ;
+    margin: 20px auto;
+    position: sticky;
+    top: 15px;
+
+
+   
+}
+
+/* Navbar links */
+.navbar a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px 20px;
+    font-family: 'JetBrains Mono', monospace;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.navbar a:hover {
+  
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px 20px;
+    font-family: 'JetBrains Mono', monospace;
+    transition: 0.3s;
+      display: block;
+  text-align: left;
+
+}
+
+
+a:hover {
+  color: rgb(231, 231, 34);
+  text-decoration: underline;
+}
